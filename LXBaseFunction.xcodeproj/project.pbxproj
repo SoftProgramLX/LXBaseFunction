@@ -92,6 +92,7 @@
 		5C909FDC1CACD45B00D732E9 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C909FDB1CACD45B00D732E9 /* libxml2.tbd */; };
 		5C930A0E1CACD70800F1EFB0 /* LXFreeStreamerAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C930A0D1CACD70800F1EFB0 /* LXFreeStreamerAudioController.m */; };
 		5CD66EC01CAC0D08003A7EFC /* myRecord.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5CD66EBF1CAC0D08003A7EFC /* myRecord.caf */; };
+		5CE67EB11D4F540E00B5DCFC /* sceen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CE67EB01D4F540E00B5DCFC /* sceen.png */; };
 		5CEC33E71CAE5C6E00D20B75 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEC33E61CAE5C6E00D20B75 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -269,6 +270,7 @@
 		5C930A0C1CACD70800F1EFB0 /* LXFreeStreamerAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFreeStreamerAudioController.h; sourceTree = "<group>"; };
 		5C930A0D1CACD70800F1EFB0 /* LXFreeStreamerAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFreeStreamerAudioController.m; sourceTree = "<group>"; };
 		5CD66EBF1CAC0D08003A7EFC /* myRecord.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRecord.caf; sourceTree = "<group>"; };
+		5CE67EB01D4F540E00B5DCFC /* sceen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sceen.png; sourceTree = "<group>"; };
 		5CEC33E51CAE5C6E00D20B75 /* LXBaseFunction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LXBaseFunction.entitlements; sourceTree = "<group>"; };
 		5CEC33E61CAE5C6E00D20B75 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -575,6 +577,7 @@
 		5C4DD3F51CAA611C00A1C40D /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				5CE67EB01D4F540E00B5DCFC /* sceen.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -901,6 +904,7 @@
 				5C4DD3FC1CAA611C00A1C40D /* 004.mp3 in Resources */,
 				5C4DD3FA1CAA611C00A1C40D /* 002.mp3 in Resources */,
 				5CD66EC01CAC0D08003A7EFC /* myRecord.caf in Resources */,
+				5CE67EB11D4F540E00B5DCFC /* sceen.png in Resources */,
 				5C909FCF1CACD3F600D732E9 /* Info.plist in Resources */,
 				5C5FA54D1CABB7AA003AFF21 /* mingtianguohou.mp3 in Resources */,
 				5C4DD3FF1CAA611C00A1C40D /* 007.mp3 in Resources */,

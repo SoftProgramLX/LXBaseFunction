@@ -56,7 +56,7 @@
     tableView.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:tableView];
     self.tableView = tableView;
-}
+} 
 
 #pragma mark - UITableViewDelegate
 
