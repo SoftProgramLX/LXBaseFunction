@@ -69,6 +69,13 @@
         cell.backgroundColor = bgColor;
     }
     
+    //没有实现的功能
+    if ((indexPath.section == 1 && indexPath.row == 1) || (indexPath.section == 2 && indexPath.row == 1)) {
+        cell.textLabel.textColor = [UIColor grayColor];
+    } else {
+        cell.textLabel.textColor = [UIColor blackColor];
+    }
+    
     cell.textLabel.text = self.showDataArr[indexPath.section][indexPath.row];
     return cell;
 }
@@ -192,16 +199,6 @@
         case 4: {
             [self.navigationController pushViewController:[[LXAVAudioRecorderController alloc] init] animated:YES];
         } break;
-        //
-        //        case 7: {
-        //        } break;
-        //
-        //        case 7: {
-        //        } break;
-        //
-        //        case 7: {
-        //        } break;
-            
             
         default: break;
     }

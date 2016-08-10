@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, LXImagePickerSourceType){
 
 - (void)createUI
 {
-    NSArray *btnTitle = @[@"照片", @"视频", @"相册库"];
+    NSArray *btnTitle = @[@"照相", @"视频", @"相册库"];
     for (int i = 0; i < btnTitle.count; i++) {
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(20 + i*((kScreenWidth-2*20-3*80)/2.0 + 80), 20, 80, 40)];
         btn.backgroundColor = [UIColor redColor];
