@@ -60,6 +60,7 @@
 		5CE67EB11D4F540E00B5DCFC /* sceen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CE67EB01D4F540E00B5DCFC /* sceen.png */; };
 		5CEAF30E1D82D59B00D1759F /* LXHealthKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAF30C1D82D59B00D1759F /* LXHealthKitController.m */; };
 		5CEAF3111D82D5B900D1759F /* LXMasonryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAF3101D82D5B900D1759F /* LXMasonryController.m */; };
+		5CEAF3141D82D7A700D1759F /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAF3131D82D7A700D1759F /* UIImage+Extension.m */; };
 		5CEC33E71CAE5C6E00D20B75 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEC33E61CAE5C6E00D20B75 /* HealthKit.framework */; };
 		BB596DFD89E6F46473D0D7B2 /* libPods-LXBaseFunction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1C0139B941B3CEC8C4D86D /* libPods-LXBaseFunction.a */; };
 /* End PBXBuildFile section */
@@ -172,6 +173,8 @@
 		5CEAF30C1D82D59B00D1759F /* LXHealthKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHealthKitController.m; sourceTree = "<group>"; };
 		5CEAF30F1D82D5B900D1759F /* LXMasonryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMasonryController.h; sourceTree = "<group>"; };
 		5CEAF3101D82D5B900D1759F /* LXMasonryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMasonryController.m; sourceTree = "<group>"; };
+		5CEAF3121D82D7A700D1759F /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		5CEAF3131D82D7A700D1759F /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		5CEC33E51CAE5C6E00D20B75 /* LXBaseFunction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LXBaseFunction.entitlements; sourceTree = "<group>"; };
 		5CEC33E61CAE5C6E00D20B75 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		862A98BD78DE0A676609688A /* Pods-LXBaseFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBaseFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXBaseFunction/Pods-LXBaseFunction.release.xcconfig"; sourceTree = "<group>"; };
@@ -303,6 +306,8 @@
 		5C0FB88D1CA51E2E00EC0BAE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				5CEAF3121D82D7A700D1759F /* UIImage+Extension.h */,
+				5CEAF3131D82D7A700D1759F /* UIImage+Extension.m */,
 				5C0FB8A61CA5201800EC0BAE /* UIView+Extension.h */,
 				5C0FB8A71CA5201800EC0BAE /* UIView+Extension.m */,
 			);
@@ -848,6 +853,7 @@
 				5C0FB8B71CA525DA00EC0BAE /* LXBaseViewController.m in Sources */,
 				5C7B9C761CB3672C00091D3B /* LXMPMoviePlayerViewController.m in Sources */,
 				5C0FB8BD1CA52D3B00EC0BAE /* LXNavigationController.m in Sources */,
+				5CEAF3141D82D7A700D1759F /* UIImage+Extension.m in Sources */,
 				5C7B9C261CAE855500091D3B /* LXMPMoviePlayerController.m in Sources */,
 				5C0FB8A81CA5201800EC0BAE /* UIView+Extension.m in Sources */,
 				5C0FB8A11CA51E5900EC0BAE /* AppDelegate.m in Sources */,

@@ -15,11 +15,12 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-#import "UIView+Extension.h"
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import "Reachability.h"
 #import "Masonry.h"
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
 
 //自定义文件
 #import "LXCreateView.h"
