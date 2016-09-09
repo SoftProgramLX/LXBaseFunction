@@ -10,7 +10,11 @@
 
 @interface LXNetWorkTool : NSObject
 
-+ (void)post:(NSString *)url param:(NSString *)param success:(void (^)(NSDictionary *))success failure:(void (^)(NSError *))failure;
-+ (void)get:(NSString *)url param:(NSString *)param success:(void (^)(NSDictionary *))success failure:(void (^)(NSError *))failure;
+@property (nonatomic, assign) AFNetworkReachabilityStatus wifiType;
+
++ (LXNetWorkTool *)sharedLXNetWorkTool;
+
++ (void)getWithUrlString:(NSString *)urlStr withParam:(NSDictionary *)param success:(void (^)(NSDictionary * responseDic))success failure:(void (^)(NSError *error))failure;
++ (void)postWithUrlString:(NSString *)urlStr withParam:(NSDictionary *)param success:(void (^)(NSDictionary * responseDic))success failure:(void (^)(NSError *error))failure;
 
 @end

@@ -10,8 +10,4 @@
 
 @interface LXCacheDataSingleton : NSObject
 
-@property (nonatomic, assign) AFNetworkReachabilityStatus wifiStatus;
-
-+ (LXCacheDataSingleton *)sharedLXCacheDataSingleton;
-
 @end

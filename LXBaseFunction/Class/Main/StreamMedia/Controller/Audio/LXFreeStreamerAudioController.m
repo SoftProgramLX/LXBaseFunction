@@ -56,7 +56,7 @@
 - (FSAudioStream *)audioStream
 {
     if (!_audioStream) {
-        NSURL *url = [self getNetworkUrl];
+        NSURL *url = [self getFileUrl];
         //创建FSAudioStream对象
         _audioStream = [[FSAudioStream alloc] initWithUrl:url];
         _audioStream.onFailure = ^(FSAudioStreamError error,NSString *description){
@@ -65,7 +65,7 @@
         _audioStream.onCompletion = ^(){
             NSLog(@"播放完成!");
         };
-        [_audioStream setVolume:0.5];//设置声音
+        [_audioStream setVolume:0.9];//设置声音
     }
     return _audioStream;
 }

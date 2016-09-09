@@ -59,11 +59,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LXHealthKitManager)
     collectionQuery.initialResultsHandler = ^(HKStatisticsCollectionQuery *query, HKStatisticsCollection * __nullable result, NSError * __nullable error) {
         
         NSMutableArray *returnArr = [NSMutableArray array];
-//        for (HKStatistics *statistic in result.statistics) {
-//        }
         for (NSInteger i = result.statistics.count - 1; i >= 0; i--) {
             HKStatistics *statistic = result.statistics[i];
-            //            NSLog(@"%@ 至 %@", statistic.startDate, statistic.endDate);
             for (HKSource *source in statistic.sources) {
                 if ([source.name isEqualToString:[UIDevice currentDevice].name]) {
                     LXHealthStepModel *model = [[LXHealthStepModel alloc] init];
@@ -73,7 +70,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LXHealthKitManager)
                     HKQuantity *quantity = [statistic sumQuantityForSource:source];
                     if ([quantity isCompatibleWithUnit:[HKUnit countUnit]]) {
                         model.stepCount = (NSInteger)[quantity doubleValueForUnit:[HKUnit countUnit]];
-                        //                        NSLog(@"source.name:%@ -- %ld步", source.name, model.stepCount);
                     }
                     [returnArr addObject:model];
                 }

@@ -25,6 +25,7 @@
 #import "LXNavigationController.h"
 #import "LXBaseCell.h"
 #import "LXNetWorkTool.h"
+#import "Reachability.h"
 
 typedef NS_ENUM(NSInteger, RefreshStatus){
     RefreshStatusDefault = 0,

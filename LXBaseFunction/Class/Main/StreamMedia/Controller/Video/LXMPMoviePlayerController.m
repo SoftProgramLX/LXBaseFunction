@@ -14,7 +14,7 @@
 @interface LXMPMoviePlayerController ()
 {
     NSInteger direction;
-    LXCacheDataSingleton *singleton;
+    LXNetWorkTool *netWorkTool;
     UILabel *remindLabel;
     UIButton *deleteBtn;
     CGRect backBtnFrame;
@@ -36,7 +36,7 @@
     [super viewDidLoad];
     self.title = @"在线视频";
     self.view.backgroundColor = bgColor;
-    singleton = [LXCacheDataSingleton sharedLXCacheDataSingleton];
+    netWorkTool = [LXNetWorkTool sharedLXNetWorkTool];
     direction = UIDeviceOrientationLandscapeLeft;
     
     [self addMPMoviePlayer];
@@ -243,7 +243,7 @@
 
 - (void)judgeNetwork
 {
-    if (singleton.wifiStatus == 1) {
+    if (netWorkTool.wifiType == 1) {
         remindLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, kScreenWidth, 40)];
         remindLabel.text = @"⚠正在使用2G/3G/4G网络，可能会产生网络流量";
         remindLabel.font = [UIFont systemFontOfSize:14];
