@@ -16,20 +16,23 @@ PODS:
     - AFNetworking/NSURLSession
   - FreeStreamer (3.6.3):
     - Reachability (~> 3.0)
+  - Masonry (1.0.1)
   - MJExtension (3.0.13)
   - Reachability (3.2)
 
 DEPENDENCIES:
   - AFNetworking
   - FreeStreamer
+  - Masonry
   - MJExtension
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FreeStreamer: cc73d77f3adc114899c82b0d0a0dc16e077ec65d
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
 
-PODFILE CHECKSUM: e3fdf95e74fda724dc99ed044c531aa4d509aaf3
+PODFILE CHECKSUM: 3ba257edd69dab7220463a7aa38980a365e46ab5
 
 COCOAPODS: 1.0.1
