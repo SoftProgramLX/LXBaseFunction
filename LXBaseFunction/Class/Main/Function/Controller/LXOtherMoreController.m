@@ -9,6 +9,7 @@
 #import "LXOtherMoreController.h"
 #import "LXHealthKitController.h"
 #import "LXMasonryController.h"
+#import "LXPaintViewController.h"
 
 @interface LXOtherMoreController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -25,7 +26,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = bgColor;
     
-    _showDataArr = @[@"HealthKit", @"Masonry"];
+    _showDataArr = @[@"HealthKit", @"Masonry", @"DrawingBoard"];
     
     [self createUI];
 }
@@ -69,6 +70,11 @@
             
         case 1: {
             LXMasonryController *vc = [[LXMasonryController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        } break;
+            
+        case 2: {
+            LXPaintViewController *vc = [[LXPaintViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         } break;
             

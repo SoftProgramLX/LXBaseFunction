@@ -61,6 +61,9 @@
 		5CEAF30E1D82D59B00D1759F /* LXHealthKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAF30C1D82D59B00D1759F /* LXHealthKitController.m */; };
 		5CEAF3111D82D5B900D1759F /* LXMasonryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAF3101D82D5B900D1759F /* LXMasonryController.m */; };
 		5CEAF3141D82D7A700D1759F /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAF3131D82D7A700D1759F /* UIImage+Extension.m */; };
+		5CEAF31E1D83DE2F00D1759F /* LXPaintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAF31D1D83DE2F00D1759F /* LXPaintViewController.m */; };
+		5CEAF3221D83DE7100D1759F /* LXPaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAF3211D83DE7100D1759F /* LXPaintView.m */; };
+		5CEAF3251D83E29600D1759F /* LXPaintStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAF3241D83E29600D1759F /* LXPaintStep.m */; };
 		5CEC33E71CAE5C6E00D20B75 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEC33E61CAE5C6E00D20B75 /* HealthKit.framework */; };
 		BB596DFD89E6F46473D0D7B2 /* libPods-LXBaseFunction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1C0139B941B3CEC8C4D86D /* libPods-LXBaseFunction.a */; };
 /* End PBXBuildFile section */
@@ -175,6 +178,12 @@
 		5CEAF3101D82D5B900D1759F /* LXMasonryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMasonryController.m; sourceTree = "<group>"; };
 		5CEAF3121D82D7A700D1759F /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		5CEAF3131D82D7A700D1759F /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		5CEAF31C1D83DE2F00D1759F /* LXPaintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPaintViewController.h; sourceTree = "<group>"; };
+		5CEAF31D1D83DE2F00D1759F /* LXPaintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPaintViewController.m; sourceTree = "<group>"; };
+		5CEAF3201D83DE7100D1759F /* LXPaintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPaintView.h; sourceTree = "<group>"; };
+		5CEAF3211D83DE7100D1759F /* LXPaintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPaintView.m; sourceTree = "<group>"; };
+		5CEAF3231D83E29600D1759F /* LXPaintStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPaintStep.h; sourceTree = "<group>"; };
+		5CEAF3241D83E29600D1759F /* LXPaintStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPaintStep.m; sourceTree = "<group>"; };
 		5CEC33E51CAE5C6E00D20B75 /* LXBaseFunction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LXBaseFunction.entitlements; sourceTree = "<group>"; };
 		5CEC33E61CAE5C6E00D20B75 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		862A98BD78DE0A676609688A /* Pods-LXBaseFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBaseFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXBaseFunction/Pods-LXBaseFunction.release.xcconfig"; sourceTree = "<group>"; };
@@ -464,7 +473,7 @@
 			children = (
 				5C7B9C151CAE824700091D3B /* Controller */,
 				5C7B9C1A1CAE824700091D3B /* Model */,
-				5C7B9C1F1CAE824700091D3B /* View */,
+				5CEAF31F1D83DE7100D1759F /* View */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -476,6 +485,7 @@
 				5C7B9C191CAE824700091D3B /* LXOtherMoreController.m */,
 				5CEAF30A1D82D59B00D1759F /* HealthKit */,
 				5CEAF30D1D82D59B00D1759F /* Masonry */,
+				5CEAF3151D83DDCA00D1759F /* DrawingBoard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -487,15 +497,10 @@
 				5C7B9C1C1CAE824700091D3B /* LXHealthKitManager.m */,
 				5C7B9C1D1CAE824700091D3B /* LXHealthStepModel.h */,
 				5C7B9C1E1CAE824700091D3B /* LXHealthStepModel.m */,
+				5CEAF3231D83E29600D1759F /* LXPaintStep.h */,
+				5CEAF3241D83E29600D1759F /* LXPaintStep.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		5C7B9C1F1CAE824700091D3B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		5C7B9C6D1CB365EE00091D3B /* Help */ = {
@@ -625,6 +630,24 @@
 				5CEAF3101D82D5B900D1759F /* LXMasonryController.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		5CEAF3151D83DDCA00D1759F /* DrawingBoard */ = {
+			isa = PBXGroup;
+			children = (
+				5CEAF31C1D83DE2F00D1759F /* LXPaintViewController.h */,
+				5CEAF31D1D83DE2F00D1759F /* LXPaintViewController.m */,
+			);
+			path = DrawingBoard;
+			sourceTree = "<group>";
+		};
+		5CEAF31F1D83DE7100D1759F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CEAF3201D83DE7100D1759F /* LXPaintView.h */,
+				5CEAF3211D83DE7100D1759F /* LXPaintView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9B38D897443969F830D49C14 /* Frameworks */ = {
@@ -841,6 +864,7 @@
 				5C0FB85A1CA51CBA00EC0BAE /* main.m in Sources */,
 				5C37C4131CA676C000AD822D /* LXNetWorkTool.m in Sources */,
 				5C909E811CACC3E200D732E9 /* LXAudioToolCaseController.m in Sources */,
+				5CEAF3251D83E29600D1759F /* LXPaintStep.m in Sources */,
 				5C7B9C721CB3661800091D3B /* LXAudioToolboxPlaySound.m in Sources */,
 				5C7B9C211CAE824700091D3B /* LXOtherMoreController.m in Sources */,
 				5C0FB8A51CA51EDF00EC0BAE /* LXTabBarViewController.m in Sources */,
@@ -858,7 +882,9 @@
 				5C0FB8A81CA5201800EC0BAE /* UIView+Extension.m in Sources */,
 				5C0FB8A11CA51E5900EC0BAE /* AppDelegate.m in Sources */,
 				5C909E801CACC3E200D732E9 /* LXAudioToolboxController.m in Sources */,
+				5CEAF31E1D83DE2F00D1759F /* LXPaintViewController.m in Sources */,
 				5C0FB8AB1CA5205E00EC0BAE /* LXHelpClass.m in Sources */,
+				5CEAF3221D83DE7100D1759F /* LXPaintView.m in Sources */,
 				5CEAF3111D82D5B900D1759F /* LXMasonryController.m in Sources */,
 				5C930A0E1CACD70800F1EFB0 /* LXFreeStreamerAudioController.m in Sources */,
 				5C0FB8C01CA52E1D00EC0BAE /* LXCreateView.m in Sources */,
