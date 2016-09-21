@@ -35,7 +35,8 @@
     
     //先按1：3分割 displView（显示结果区域）和 keyboardView（键盘区域）
     [displayView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top);
+//        make.top.equalTo(self.view.mas_top);
+        make.top.equalTo(@(20));
         make.left.and.right.equalTo(self.view);
         make.height.equalTo(keyboardView).multipliedBy(0.3f);
     }];
