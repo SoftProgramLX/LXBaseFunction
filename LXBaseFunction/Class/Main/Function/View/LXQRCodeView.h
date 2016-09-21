@@ -10,4 +10,12 @@
 
 @interface LXQRCodeView : UIView
 
+/**
+ *  透明的区域
+ */
+@property (nonatomic, assign) CGSize transparentArea;
+
+- (void)startScan;
+- (void)stopScan;
+
 @end

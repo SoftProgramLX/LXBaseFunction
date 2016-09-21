@@ -105,9 +105,12 @@
 
 - (void)createBtnClicked
 {
-    /*字符转二维码
-     */
-    self.testImageView.image = [QRCodeGenerator qrImageForString:self.testTextField.text imageSize:self.testImageView.bounds.size.width];
+    if (self.testTextField.text.length < 1) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"请输入二维码内容" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    } else {
+        //字符转二维码
+        self.testImageView.image = [QRCodeGenerator qrImageForString:self.testTextField.text imageSize:self.testImageView.bounds.size.width];
+    }
 }
 
 - (void)saveBtnClicked
