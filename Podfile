@@ -7,5 +7,7 @@ pod 'FreeStreamer'
 pod 'AFNetworking' 
 pod 'MJExtension'
 pod 'Masonry'
+pod 'ZBarSDK'
+pod 'libqrencode'
 
 end

@@ -20,6 +20,10 @@
 		5C0FB8BD1CA52D3B00EC0BAE /* LXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0FB8BC1CA52D3B00EC0BAE /* LXNavigationController.m */; };
 		5C0FB8C01CA52E1D00EC0BAE /* LXCreateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0FB8BF1CA52E1D00EC0BAE /* LXCreateView.m */; };
 		5C37C4131CA676C000AD822D /* LXNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C37C4121CA676C000AD822D /* LXNetWorkTool.m */; };
+		5C47A4D91D927D9A00F3BE0E /* LXScanQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C47A4D81D927D9A00F3BE0E /* LXScanQRCodeController.m */; };
+		5C47A4DC1D927DAE00F3BE0E /* LXCreateQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C47A4DB1D927DAE00F3BE0E /* LXCreateQRCodeController.m */; };
+		5C47A4DF1D927FB600F3BE0E /* LXQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C47A4DE1D927FB600F3BE0E /* LXQRCodeView.m */; };
+		5C47A4E21D92843100F3BE0E /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C47A4E11D92843100F3BE0E /* QRCodeGenerator.m */; };
 		5C4DD3F91CAA611C00A1C40D /* 001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DD3E91CAA611C00A1C40D /* 001.mp3 */; };
 		5C4DD3FA1CAA611C00A1C40D /* 002.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DD3EA1CAA611C00A1C40D /* 002.mp3 */; };
 		5C4DD3FB1CAA611C00A1C40D /* 003.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DD3EB1CAA611C00A1C40D /* 003.mp3 */; };
@@ -55,6 +59,7 @@
 		5C909FDA1CACD45500D732E9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C909FD91CACD45500D732E9 /* CFNetwork.framework */; };
 		5C909FDC1CACD45B00D732E9 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C909FDB1CACD45B00D732E9 /* libxml2.tbd */; };
 		5C930A0E1CACD70800F1EFB0 /* LXFreeStreamerAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C930A0D1CACD70800F1EFB0 /* LXFreeStreamerAudioController.m */; };
+		5CAB5DD11D92702900B7124C /* LXZBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB5DD01D92702900B7124C /* LXZBarController.m */; };
 		5CD66EC01CAC0D08003A7EFC /* myRecord.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5CD66EBF1CAC0D08003A7EFC /* myRecord.caf */; };
 		5CD874791D82C2EC00411D24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD874781D82C2EC00411D24 /* UIKit.framework */; };
 		5CE67EB11D4F540E00B5DCFC /* sceen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CE67EB01D4F540E00B5DCFC /* sceen.png */; };
@@ -118,6 +123,14 @@
 		5C0FB8BF1CA52E1D00EC0BAE /* LXCreateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCreateView.m; sourceTree = "<group>"; };
 		5C37C4111CA676C000AD822D /* LXNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetWorkTool.h; sourceTree = "<group>"; };
 		5C37C4121CA676C000AD822D /* LXNetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetWorkTool.m; sourceTree = "<group>"; };
+		5C47A4D71D927D9A00F3BE0E /* LXScanQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXScanQRCodeController.h; sourceTree = "<group>"; };
+		5C47A4D81D927D9A00F3BE0E /* LXScanQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXScanQRCodeController.m; sourceTree = "<group>"; };
+		5C47A4DA1D927DAE00F3BE0E /* LXCreateQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXCreateQRCodeController.h; sourceTree = "<group>"; };
+		5C47A4DB1D927DAE00F3BE0E /* LXCreateQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCreateQRCodeController.m; sourceTree = "<group>"; };
+		5C47A4DD1D927FB600F3BE0E /* LXQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXQRCodeView.h; sourceTree = "<group>"; };
+		5C47A4DE1D927FB600F3BE0E /* LXQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXQRCodeView.m; sourceTree = "<group>"; };
+		5C47A4E01D92843100F3BE0E /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		5C47A4E11D92843100F3BE0E /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
 		5C4DD3E91CAA611C00A1C40D /* 001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 001.mp3; sourceTree = "<group>"; };
 		5C4DD3EA1CAA611C00A1C40D /* 002.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 002.mp3; sourceTree = "<group>"; };
 		5C4DD3EB1CAA611C00A1C40D /* 003.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 003.mp3; sourceTree = "<group>"; };
@@ -169,6 +182,8 @@
 		5C909FDB1CACD45B00D732E9 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		5C930A0C1CACD70800F1EFB0 /* LXFreeStreamerAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFreeStreamerAudioController.h; sourceTree = "<group>"; };
 		5C930A0D1CACD70800F1EFB0 /* LXFreeStreamerAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFreeStreamerAudioController.m; sourceTree = "<group>"; };
+		5CAB5DCF1D92702900B7124C /* LXZBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXZBarController.h; sourceTree = "<group>"; };
+		5CAB5DD01D92702900B7124C /* LXZBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXZBarController.m; sourceTree = "<group>"; };
 		5CD66EBF1CAC0D08003A7EFC /* myRecord.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRecord.caf; sourceTree = "<group>"; };
 		5CD874781D82C2EC00411D24 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5CE67EB01D4F540E00B5DCFC /* sceen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sceen.png; sourceTree = "<group>"; };
@@ -406,6 +421,8 @@
 		5C0FB89B1CA51E2E00EC0BAE /* Export */ = {
 			isa = PBXGroup;
 			children = (
+				5C47A4E01D92843100F3BE0E /* QRCodeGenerator.h */,
+				5C47A4E11D92843100F3BE0E /* QRCodeGenerator.m */,
 			);
 			path = Export;
 			sourceTree = "<group>";
@@ -483,6 +500,7 @@
 			children = (
 				5C7B9C181CAE824700091D3B /* LXOtherMoreController.h */,
 				5C7B9C191CAE824700091D3B /* LXOtherMoreController.m */,
+				5CAB5DCE1D926FE300B7124C /* ZBar */,
 				5CEAF30A1D82D59B00D1759F /* HealthKit */,
 				5CEAF30D1D82D59B00D1759F /* Masonry */,
 				5CEAF3151D83DDCA00D1759F /* DrawingBoard */,
@@ -614,6 +632,19 @@
 			path = LXBaseFunction/Framework;
 			sourceTree = "<group>";
 		};
+		5CAB5DCE1D926FE300B7124C /* ZBar */ = {
+			isa = PBXGroup;
+			children = (
+				5CAB5DCF1D92702900B7124C /* LXZBarController.h */,
+				5CAB5DD01D92702900B7124C /* LXZBarController.m */,
+				5C47A4D71D927D9A00F3BE0E /* LXScanQRCodeController.h */,
+				5C47A4D81D927D9A00F3BE0E /* LXScanQRCodeController.m */,
+				5C47A4DA1D927DAE00F3BE0E /* LXCreateQRCodeController.h */,
+				5C47A4DB1D927DAE00F3BE0E /* LXCreateQRCodeController.m */,
+			);
+			path = ZBar;
+			sourceTree = "<group>";
+		};
 		5CEAF30A1D82D59B00D1759F /* HealthKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -646,6 +677,8 @@
 			children = (
 				5CEAF3201D83DE7100D1759F /* LXPaintView.h */,
 				5CEAF3211D83DE7100D1759F /* LXPaintView.m */,
+				5C47A4DD1D927FB600F3BE0E /* LXQRCodeView.h */,
+				5C47A4DE1D927FB600F3BE0E /* LXQRCodeView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -864,6 +897,7 @@
 				5C0FB85A1CA51CBA00EC0BAE /* main.m in Sources */,
 				5C37C4131CA676C000AD822D /* LXNetWorkTool.m in Sources */,
 				5C909E811CACC3E200D732E9 /* LXAudioToolCaseController.m in Sources */,
+				5C47A4E21D92843100F3BE0E /* QRCodeGenerator.m in Sources */,
 				5CEAF3251D83E29600D1759F /* LXPaintStep.m in Sources */,
 				5C7B9C721CB3661800091D3B /* LXAudioToolboxPlaySound.m in Sources */,
 				5C7B9C211CAE824700091D3B /* LXOtherMoreController.m in Sources */,
@@ -887,7 +921,11 @@
 				5CEAF3221D83DE7100D1759F /* LXPaintView.m in Sources */,
 				5CEAF3111D82D5B900D1759F /* LXMasonryController.m in Sources */,
 				5C930A0E1CACD70800F1EFB0 /* LXFreeStreamerAudioController.m in Sources */,
+				5CAB5DD11D92702900B7124C /* LXZBarController.m in Sources */,
+				5C47A4DC1D927DAE00F3BE0E /* LXCreateQRCodeController.m in Sources */,
+				5C47A4D91D927D9A00F3BE0E /* LXScanQRCodeController.m in Sources */,
 				5C0FB8C01CA52E1D00EC0BAE /* LXCreateView.m in Sources */,
+				5C47A4DF1D927FB600F3BE0E /* LXQRCodeView.m in Sources */,
 				5C7B9C731CB3661800091D3B /* LXAVAssetImageHelp.m in Sources */,
 				5C0FB8B41CA523F300EC0BAE /* LXBaseCell.m in Sources */,
 				5C909E821CACC3E200D732E9 /* LXAVAudioPlayerController.m in Sources */,

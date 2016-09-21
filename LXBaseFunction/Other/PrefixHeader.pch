@@ -18,9 +18,10 @@
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import "Reachability.h"
-#import "Masonry.h"
+#import <Masonry.h>
 #import "UIImage+Extension.h"
 #import "UIView+Extension.h"
+#import <ZBarSDK.h>
 
 //自定义文件
 #import "LXCreateView.h"
@@ -29,6 +30,7 @@
 #import "LXNavigationController.h"
 #import "LXBaseCell.h"
 #import "LXNetWorkTool.h"
+#import "LXBaseViewController.h"
 
 typedef NS_ENUM(NSInteger, RefreshStatus){
     RefreshStatusDefault = 0,
@@ -41,6 +43,10 @@ typedef NS_ENUM(NSInteger, RefreshStatus){
 #else
 #define Log(...)
 #endif
+
+#define WeakSelf(type)  __weak typeof(type) weak##type = type;
+
+#define IOS_VERSION    [[[UIDevice currentDevice] systemVersion] floatValue]
 
 //取得是否登录
 #define whetherLogin [[NSUserDefaults standardUserDefaults] boolForKey:@"whetherLogin"]
@@ -74,6 +80,14 @@ typedef NS_ENUM(NSInteger, RefreshStatus){
 #define mp4Website2 @"http://data.vod.itc.cn/?prod=app&new=/194/216/JBUeCIHV4s394vYk3nbgt2.mp4"
 #define mp4Website3 @"http://data.vod.itc.cn/?prod=app&new=/10/66/eCGPkAewSVqy9P57hvB11D.mp4"
 #define mp4Website4 @"http://data.vod.itc.cn/?prod=app&new=/125/206/g586XlZhJQBGTnFDS75cPF.mp4"
+
+
+#define ViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
 
 #endif
 
