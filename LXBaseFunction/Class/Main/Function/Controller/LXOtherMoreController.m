@@ -29,7 +29,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = bgColor;
     
-    _showDataArr = @[@"HealthKit", @"Masonry", @"DrawingBoard", @"二维码", @"地图", @"打开系统功能"];
+    _showDataArr = @[@"运动步数", @"Masonry约束", @"画板", @"二维码", @"地图", @"打开系统功能"];
     
     [self createUI];
 }
