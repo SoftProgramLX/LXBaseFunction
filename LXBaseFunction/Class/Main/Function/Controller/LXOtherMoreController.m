@@ -12,6 +12,7 @@
 #import "LXPaintViewController.h"
 #import "LXZBarController.h"
 #import "LXMapController.h"
+#import "LXOpenSettingController.h"
 
 @interface LXOtherMoreController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -28,7 +29,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = bgColor;
     
-    _showDataArr = @[@"HealthKit", @"Masonry", @"DrawingBoard", @"二维码", @"地图"];
+    _showDataArr = @[@"HealthKit", @"Masonry", @"DrawingBoard", @"二维码", @"地图", @"打开系统功能"];
     
     [self createUI];
 }
@@ -90,9 +91,9 @@
             [self.navigationController pushViewController:vc animated:YES];
         } break;
             
-            
         case 5: {
-            
+            LXOpenSettingController *vc = [[LXOpenSettingController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         } break;
             
         default: break;

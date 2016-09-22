@@ -74,6 +74,7 @@
 		5CFC9B8B1D93C2ED0057F3D8 /* LXCalloutAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC9B891D93C2ED0057F3D8 /* LXCalloutAnnotation.m */; };
 		5CFC9B8E1D93C2F40057F3D8 /* LXCalloutAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC9B8D1D93C2F40057F3D8 /* LXCalloutAnnotationView.m */; };
 		5CFC9B911D93C3150057F3D8 /* LXMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC9B901D93C3150057F3D8 /* LXMapController.m */; };
+		5CFC9B951D93C78B0057F3D8 /* LXOpenSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC9B941D93C78B0057F3D8 /* LXOpenSettingController.m */; };
 		BB596DFD89E6F46473D0D7B2 /* libPods-LXBaseFunction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1C0139B941B3CEC8C4D86D /* libPods-LXBaseFunction.a */; };
 /* End PBXBuildFile section */
 
@@ -213,6 +214,8 @@
 		5CFC9B8D1D93C2F40057F3D8 /* LXCalloutAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCalloutAnnotationView.m; sourceTree = "<group>"; };
 		5CFC9B8F1D93C3150057F3D8 /* LXMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMapController.h; sourceTree = "<group>"; };
 		5CFC9B901D93C3150057F3D8 /* LXMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMapController.m; sourceTree = "<group>"; };
+		5CFC9B931D93C78B0057F3D8 /* LXOpenSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXOpenSettingController.h; sourceTree = "<group>"; };
+		5CFC9B941D93C78B0057F3D8 /* LXOpenSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXOpenSettingController.m; sourceTree = "<group>"; };
 		862A98BD78DE0A676609688A /* Pods-LXBaseFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBaseFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXBaseFunction/Pods-LXBaseFunction.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -512,6 +515,7 @@
 			children = (
 				5C7B9C181CAE824700091D3B /* LXOtherMoreController.h */,
 				5C7B9C191CAE824700091D3B /* LXOtherMoreController.m */,
+				5CFC9B921D93C77D0057F3D8 /* Setting */,
 				5CFC9B851D93C2B50057F3D8 /* Map */,
 				5CAB5DCE1D926FE300B7124C /* ZBar */,
 				5CEAF30A1D82D59B00D1759F /* HealthKit */,
@@ -709,6 +713,15 @@
 				5CFC9B901D93C3150057F3D8 /* LXMapController.m */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		5CFC9B921D93C77D0057F3D8 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				5CFC9B931D93C78B0057F3D8 /* LXOpenSettingController.h */,
+				5CFC9B941D93C78B0057F3D8 /* LXOpenSettingController.m */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		9B38D897443969F830D49C14 /* Frameworks */ = {
@@ -927,6 +940,7 @@
 				5C37C4131CA676C000AD822D /* LXNetWorkTool.m in Sources */,
 				5C909E811CACC3E200D732E9 /* LXAudioToolCaseController.m in Sources */,
 				5C47A4E21D92843100F3BE0E /* QRCodeGenerator.m in Sources */,
+				5CFC9B951D93C78B0057F3D8 /* LXOpenSettingController.m in Sources */,
 				5CEAF3251D83E29600D1759F /* LXPaintStep.m in Sources */,
 				5C7B9C721CB3661800091D3B /* LXAudioToolboxPlaySound.m in Sources */,
 				5C7B9C211CAE824700091D3B /* LXOtherMoreController.m in Sources */,
