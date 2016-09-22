@@ -11,6 +11,7 @@
 #import "LXMasonryController.h"
 #import "LXPaintViewController.h"
 #import "LXZBarController.h"
+#import "LXMapController.h"
 
 @interface LXOtherMoreController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -27,7 +28,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = bgColor;
     
-    _showDataArr = @[@"HealthKit", @"Masonry", @"DrawingBoard", @"二维码"];
+    _showDataArr = @[@"HealthKit", @"Masonry", @"DrawingBoard", @"二维码", @"地图"];
     
     [self createUI];
 }
@@ -81,6 +82,11 @@
             
         case 3: {
             LXZBarController *vc = [[LXZBarController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        } break;
+            
+        case 4: {
+            LXMapController *vc = [[LXMapController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         } break;
             

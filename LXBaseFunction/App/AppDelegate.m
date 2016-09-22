@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LXTabBarViewController.h"
+#import "MLTransition.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,8 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];
     
     self.allowRotation = UIInterfaceOrientationMaskPortrait;
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

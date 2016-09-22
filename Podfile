@@ -9,5 +9,6 @@ pod 'MJExtension'
 pod 'Masonry'
 pod 'ZBarSDK'
 pod 'libqrencode'
+pod 'MLTransition'
 
 end
