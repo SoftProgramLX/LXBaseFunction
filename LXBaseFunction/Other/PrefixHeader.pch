@@ -23,6 +23,20 @@
 #import "UIView+Extension.h"
 #import <ZBarSDK.h>
 
+typedef NS_ENUM(NSInteger, RefreshStatus){
+    RefreshStatusDefault = 0,
+    RefreshStatusHeader,
+    RefreshStatusFooter,
+};
+
+typedef NS_ENUM(NSUInteger, NetworkStates) {
+    NetworkStatesNone, // 没有网络
+    NetworkStates2G, // 2G
+    NetworkStates3G, // 3G
+    NetworkStates4G, // 4G
+    NetworkStatesWIFI // WIFI
+};
+
 //自定义文件
 #import "LXCreateView.h"
 #import "LXHelpClass.h"
@@ -31,12 +45,6 @@
 #import "LXBaseCell.h"
 #import "LXNetWorkTool.h"
 #import "LXBaseViewController.h"
-
-typedef NS_ENUM(NSInteger, RefreshStatus){
-    RefreshStatusDefault = 0,
-    RefreshStatusHeader,
-    RefreshStatusFooter,
-};
 
 #ifdef DEBUG
 #define Log(...)   NSLog(__VA_ARGS__)

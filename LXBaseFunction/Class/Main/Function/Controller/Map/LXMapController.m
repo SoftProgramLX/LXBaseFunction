@@ -176,7 +176,9 @@
 {
     //反地理编码
     //根据坐标取得地名
-    [geocoder reverseGeocodeLocation:oldLocation completionHandler:^(NSArray *placemarks, NSError *error) {
+    CLLocation *loca = [[CLLocation alloc] initWithLatitude:73 longitude:69];
+    
+    [geocoder reverseGeocodeLocation:loca completionHandler:^(NSArray *placemarks, NSError *error) {
         CLPlacemark *placemark=[placemarks firstObject];
         NSLog(@"我的位置详细信息:%@",placemark.addressDictionary);
         
@@ -198,6 +200,8 @@
     //根据“北京市”进行地理编码
     [geocoder geocodeAddressString:@"北京市" completionHandler:^(NSArray *placemarks, NSError *error) {
         CLPlacemark *clPlacemark1=[placemarks firstObject];//获取第一个地标
+        NSLog(@"%@", clPlacemark1.location);
+        NSLog(@"%f %f", [clPlacemark1.location coordinate].latitude, [clPlacemark1.location coordinate].longitude);
         MKPlacemark *mkPlacemark1=[[MKPlacemark alloc]initWithPlacemark:clPlacemark1];
         
         //注意地理编码一次只能定位到一个位置，不能同时定位，所在放到第一个位置定位完成回调函数中再次定位

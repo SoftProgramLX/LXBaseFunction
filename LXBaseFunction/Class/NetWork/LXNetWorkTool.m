@@ -19,7 +19,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LXNetWorkTool);
     if (self) {
         self.wifiType = 1;
         //获取当前网络状态
-        [self getCurrentNet];
+        [self getCurrentNetworkType];
+        [LXNetWorkTool getCurrentNetworkStates];
     }
     return self;
 }
@@ -76,7 +77,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LXNetWorkTool);
     return manager;
 }
 
-- (void)getCurrentNet
+- (void)getCurrentNetworkType
 {
     AFNetworkReachabilityManager *mgr = [AFNetworkReachabilityManager sharedManager];
     [mgr setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status){
@@ -95,6 +96,44 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LXNetWorkTool);
         [[NSNotificationCenter defaultCenter] postNotificationName:@"AFNetworkReachabilityStatus" object:[NSString stringWithFormat:@"%d", (int)status]];
     }];
     [mgr startMonitoring];
+}
+
+// 判断网络类型
++ (NetworkStates)getCurrentNetworkStates
+{
+    NSArray *subviews = [[[[UIApplication sharedApplication] valueForKeyPath:@"statusBar"] valueForKeyPath:@"foregroundView"] subviews];
+    // 保存网络状态
+    NetworkStates states = NetworkStatesNone;
+    for (id child in subviews) {
+        if ([child isKindOfClass:NSClassFromString(@"UIStatusBarDataNetworkItemView")]) {
+            //获取到状态栏码
+            int networkType = [[child valueForKeyPath:@"dataNetworkType"] intValue];
+            switch (networkType) {
+                case 0:
+                    //无网模式
+                    states = NetworkStatesNone;
+                    break;
+                case 1:
+                    states = NetworkStates2G;
+                    break;
+                case 2:
+                    states = NetworkStates3G;
+                    break;
+                case 3:
+                    states = NetworkStates4G;
+                    break;
+                case 5:
+                {
+                    states = NetworkStatesWIFI;
+                }
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+    //根据状态选择
+    return states;
 }
 
 @end
